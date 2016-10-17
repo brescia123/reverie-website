@@ -2,4 +2,29 @@ body {
   font: 100% Helvetica, sans-serif;
   color: #333; }
 
+#welcome-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #fd853f, #5a09d8); }
+  #welcome-section .balloon-container {
+    width: 45vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #fd853f 0%, #5a09d8 100%), url("../images/air-balloon-cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+    background-blend-mode: soft-light;
+    opacity: 0.6; }
+  #welcome-section .promuoviamo-il-benes {
+    width: 420px;
+    height: 10px;
+    object-fit: contain;
+    font-family: AGaramondPro;
+    font-size: 48px;
+    color: #ffffff; }
+
+#presentation-section {
+  height: 1000px;
+  width: 1000px; }
+
 /*# sourceMappingURL=main.css.map */
