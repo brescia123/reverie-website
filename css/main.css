@@ -3,25 +3,55 @@ body {
   color: #333; }
 
 #welcome-section {
+  position: relative;
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(to top, #fd853f, #5a09d8); }
   #welcome-section .balloon-container {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 45vw;
     height: 100vh;
     background-image: linear-gradient(to top, #fd853f 0%, #5a09d8 100%), url("../images/air-balloon-cover.png");
     background-size: cover;
     background-repeat: no-repeat;
-    float: right;
     background-blend-mode: soft-light;
     opacity: 0.6; }
-  #welcome-section .promuoviamo-il-benes {
-    width: 420px;
-    height: 10px;
-    object-fit: contain;
-    font-family: AGaramondPro;
-    font-size: 48px;
-    color: #ffffff; }
+    @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+      #welcome-section .balloon-container {
+        /* on retina, use image that's scaled by 2 */
+        background-image: linear-gradient(to top, #fd853f 0%, #5a09d8 100%), url("../images/air-balloon-cover@2x.png"); } }
+  #welcome-section .welcome-text {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10; }
+    #welcome-section .welcome-text .welcome-title {
+      margin: auto;
+      max-width: 430px;
+      text-align: center;
+      font-family: AGaramondPro;
+      font-size: 48px;
+      color: #ffffff; }
+    #welcome-section .welcome-text .separator {
+      margin: auto;
+      max-width: 950px;
+      height: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff 51%, rgba(255, 255, 255, 0)); }
+    #welcome-section .welcome-text .welcome-subtitle {
+      margin: auto;
+      max-width: 430px;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: center;
+      font-family: HelveticaNeue;
+      color: #ffffff;
+      text-shadow: 0 2px 4px #af64b1; }
 
 #presentation-section {
   height: 1000px;
