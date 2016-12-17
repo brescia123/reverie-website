@@ -15,7 +15,7 @@
   background-color: RGBA(0, 0, 0, 0);
   padding-left: 40px;
   padding-right: 40px; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 720px) {
     .navbar {
       padding-left: 15px;
       padding-right: 15px; } }
@@ -87,7 +87,7 @@ body {
       text-shadow: 0 2px 3px rgba(101, 64, 130, 0.4);
       color: #ffffff;
       text-transform: uppercase; }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 720px) {
         #welcome-section .welcome-text .welcome-title {
           font-size: 2.2rem; } }
     #welcome-section .welcome-text .separator {
