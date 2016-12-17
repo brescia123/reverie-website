@@ -15,6 +15,10 @@
   background-color: RGBA(0, 0, 0, 0);
   padding-left: 40px;
   padding-right: 40px; }
+  @media screen and (max-width: 480px) {
+    .navbar {
+      padding-left: 15px;
+      padding-right: 15px; } }
   .navbar .navbar-brand {
     padding-left: 0px; }
   .navbar .nav-item {
@@ -68,7 +72,7 @@ body {
         background-image: linear-gradient(to top, #fd853f 0%, #5a09d8 100%), url("../images/air-balloon-cover@2x.png"); } }
   #welcome-section .welcome-text {
     position: relative;
-    top: 40%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
@@ -83,6 +87,9 @@ body {
       text-shadow: 0 2px 3px rgba(101, 64, 130, 0.4);
       color: #ffffff;
       text-transform: uppercase; }
+      @media screen and (max-width: 480px) {
+        #welcome-section .welcome-text .welcome-title {
+          font-size: 2.2rem; } }
     #welcome-section .welcome-text .separator {
       margin: auto;
       width: 90vw;

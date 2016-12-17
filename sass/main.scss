@@ -2,6 +2,7 @@
 @import "navbar";
 $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
+$break-small: 480px;
 
 body {
     font: 100% $font-stack;
@@ -40,12 +41,15 @@ body {
 
     .welcome-text {
         position: relative;
-        top: 40%;
+        top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
 
         .welcome-title {
+            @media screen and (max-width: $break-small) {
+              font-size: 2.2rem;
+            }
             margin: auto;
             width: 90vw;
             max-width: 672px;

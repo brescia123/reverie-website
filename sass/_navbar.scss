@@ -1,7 +1,12 @@
 $navbar-margin: 40px;
+$break-small: 480px;
 
 .navbar {
     background-color: RGBA(0, 0, 0, 0);
+    @media screen and (max-width: $break-small) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
     padding-left: $navbar-margin;
     padding-right: $navbar-margin;
 
