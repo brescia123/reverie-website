@@ -1,0 +1,38 @@
+$navbar-margin: 40px;
+
+.navbar {
+    background-color: RGBA(0, 0, 0, 0);
+    padding-left: $navbar-margin;
+    padding-right: $navbar-margin;
+
+    .navbar-brand {
+      padding-left: 0px;
+    }
+
+    .nav-item {
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    #nav-menu {
+      margin-top: 18px;
+    }
+
+    #nav-contattaci {
+        border: solid 2px #ffffff;
+        border-radius: 100px;
+        text-align: center;
+        width: auto;
+        height: auto;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 6px 8px;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        margin-top: 18px;
+        margin-bottom: 7px;
+    }
+}
