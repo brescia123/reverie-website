@@ -1,12 +1,14 @@
+$sectionContentWidth: 60vw;
+$sectionImageWidth: 40vw;
+
 .section-with-image {
     display: block;
+    height: 650px;
     @media #{$tablet} {
         display: table;
-        height: 100vh;
     }
     @media #{$desktop} {
         display: table;
-        height: 100vh;
     }
 
     .section-content,
@@ -22,24 +24,24 @@
 
     .section-image {
         width: 100vw;
-        height: 25vh;
+        height: 40%;
         @media #{$tablet} {
-            width: 30vw;
+            width: $sectionImageWidth;
         }
         @media #{$desktop} {
-            width: 30vw;
+            width: $sectionImageWidth;
         }
     }
 
     .section-content {
         width: 100vw;
-        height: 75vh;
+        height: 60%;
         padding: 9vw 5vw;
         @media #{$tablet} {
-            width: 70vw;
+            width: $sectionContentWidth;
         }
         @media #{$desktop} {
-            width: 70vw;
+            width: $sectionContentWidth;
         }
     }
 
@@ -60,14 +62,14 @@
         width: 15vw;
         min-width: 100px;
         height: 3px;
-        margin-top: 4vh;
+        margin-top: 3rem;
         border: solid 2px #979797;
     }
 
     .section-content-desc {
         max-width: $screen-sm-min;
         width: 100vw * 0.8;
-        margin-top: 5vh;
+        margin-top: 3rem;
         font-family: AGaramondPro;
         font-size: 1.6rem;
         @media #{$tablet} {
@@ -83,10 +85,10 @@
         letter-spacing: normal;
         color: #4a4a4a;
         @media #{$tablet} {
-            width: 70vw * 0.8;
+            width: $sectionContentWidth * 0.8;
         }
         @media #{$desktop} {
-            width: 70vw * 0.8;
+            width: $sectionContentWidth * 0.8;
         }
     }
 }
