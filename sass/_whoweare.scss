@@ -1,0 +1,9 @@
+#whoweare-section {
+    background-color: #f4f4f4;
+
+    .section-image {
+        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("../images/whoweare-section-image.jpg");
+        background-size: cover;
+        background-position: top;
+    }
+}

@@ -13,7 +13,7 @@
 
 .section-with-image {
   display: block;
-  height: 650px; }
+  height: auto; }
   @media screen and (min-width: 480px) and (max-width: 768px) {
     .section-with-image {
       display: table; } }
@@ -33,7 +33,7 @@
         display: table-cell; } }
   .section-with-image .section-image {
     width: 100vw;
-    height: 40%; }
+    height: 200px; }
     @media screen and (min-width: 480px) and (max-width: 768px) {
       .section-with-image .section-image {
         width: 40vw; } }
@@ -42,7 +42,6 @@
         width: 40vw; } }
   .section-with-image .section-content {
     width: 100vw;
-    height: 60%;
     padding: 9vw 5vw; }
     @media screen and (min-width: 480px) and (max-width: 768px) {
       .section-with-image .section-content {
@@ -199,6 +198,18 @@
 
 #values-section .section-image {
   background-image: url("../images/values-section-image.png");
+  background-size: cover;
+  background-position: top; }
+
+#whoweare-section {
+  background-color: #f4f4f4; }
+  #whoweare-section .section-image {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("../images/whoweare-section-image.jpg");
+    background-size: cover;
+    background-position: top; }
+
+#projects-section .section-image {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url("../images/air-balloon-cover.png");
   background-size: cover;
   background-position: top; }
 

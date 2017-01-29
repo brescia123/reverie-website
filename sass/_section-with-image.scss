@@ -3,7 +3,7 @@ $sectionImageWidth: 40vw;
 
 .section-with-image {
     display: block;
-    height: 650px;
+    height: auto;
     @media #{$tablet} {
         display: table;
     }
@@ -24,7 +24,7 @@ $sectionImageWidth: 40vw;
 
     .section-image {
         width: 100vw;
-        height: 40%;
+        height: 200px;
         @media #{$tablet} {
             width: $sectionImageWidth;
         }
@@ -35,7 +35,6 @@ $sectionImageWidth: 40vw;
 
     .section-content {
         width: 100vw;
-        height: 60%;
         padding: 9vw 5vw;
         @media #{$tablet} {
             width: $sectionContentWidth;
